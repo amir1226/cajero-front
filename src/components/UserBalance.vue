@@ -20,7 +20,7 @@ export default {
     let self = this;
     axios
       .get(
-        "https://cajero-back-amir.herokuapp.com//user/balance/" + this.username
+        "https://cajero-back-amir.herokuapp.com/user/balance/" + this.username
       )
       .then((result) => {
         self.balance = result.data.balance;
